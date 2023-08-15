@@ -12,13 +12,13 @@ require (
 	github.com/golang-infrastructure/go-variable-parameter v0.0.3 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/storage-lock/go-events v0.0.0-20230805113632-ff4385b14030 // indirect
-	github.com/storage-lock/go-memory-storage v0.0.0-20230804183639-9c892e8a4399 // indirect
-	github.com/storage-lock/go-storage v0.0.0-20230805070648-ce1105955864 // indirect
-	github.com/storage-lock/go-storage-events v0.0.0-20230805074431-3c9e83cd7acb // indirect
-	github.com/storage-lock/go-storage-lock v0.0.0-20230806063848-33d8f297b1c7 // indirect
-	github.com/storage-lock/go-storage-lock-factory v0.0.0-20230806074209-a8a207520673 // indirect
-	github.com/storage-lock/go-utils v0.0.0-20230804131655-6dbe431cdc1a // indirect
+	github.com/storage-lock/go-events v0.0.3 // indirect
+	github.com/storage-lock/go-memory-storage v0.0.0-20230808150856-6044117005c2 // indirect
+	github.com/storage-lock/go-storage v0.0.2 // indirect
+	github.com/storage-lock/go-storage-events v0.0.5 // indirect
+	github.com/storage-lock/go-storage-lock v0.0.3 // indirect
+	github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230807141610-c3fc136045e8 // indirect
+	github.com/storage-lock/go-utils v0.0.2 // indirect
 	github.com/stretchr/testify v1.8.4 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect

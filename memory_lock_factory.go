@@ -5,15 +5,15 @@ import (
 	storage_lock_factory "github.com/storage-lock/go-storage-lock-factory"
 )
 
-type MemoryLockFactory struct {
-	*storage_lock_factory.StorageLockFactory[string]
+type LockFactory struct {
+	*storage_lock_factory.StorageLockFactory[any]
 }
 
-func NewMemoryLockFactory() (*MemoryLockFactory, error) {
+// NewLockFactory 从DSN创建锁
+func NewLockFactory() (*LockFactory, error) {
 	storage := memory_storage.NewMemoryStorage()
-	factory := storage_lock_factory.NewStorageLockFactory[string](storage, nil)
-
-	return &MemoryLockFactory{
+	factory := storage_lock_factory.NewStorageLockFactory[any](storage, nil)
+	return &LockFactory{
 		StorageLockFactory: factory,
 	}, nil
 }

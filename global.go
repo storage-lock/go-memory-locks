@@ -1,29 +1,26 @@
 package mariadb_locks
 
 import (
+	"context"
 	storage_lock "github.com/storage-lock/go-storage-lock"
-	"sync"
+	storage_lock_factory "github.com/storage-lock/go-storage-lock-factory"
 )
 
-var GlobalMemoryLockFactory *MemoryLockFactory
-var globalMemoryLockFactoryOnce sync.Once
-var globalMemoryLockFactoryErr error
+var (
+	globalLockFactory = storage_lock_factory.NewStorageLockFactoryBeanFactory[string, any]()
+)
 
-func InitGlobalMemoryLockFactory() error {
-	factory, err := NewMemoryLockFactory()
-	if err != nil {
-		return err
-	}
-	GlobalMemoryLockFactory = factory
-	return nil
-}
-
-func NewMemoryLock(lockId string) (*storage_lock.StorageLock, error) {
-	globalMemoryLockFactoryOnce.Do(func() {
-		globalMemoryLockFactoryErr = InitGlobalMemoryLockFactory()
+// NewLock 从DSN创建锁
+func NewLock(ctx context.Context, lockId string) (*storage_lock.StorageLock, error) {
+	init, err := globalLockFactory.GetOrInit(ctx, "x", func(ctx context.Context) (*storage_lock_factory.StorageLockFactory[any], error) {
+		factory, err := NewLockFactory()
+		if err != nil {
+			return nil, err
+		}
+		return factory.StorageLockFactory, nil
 	})
-	if globalMemoryLockFactoryErr != nil {
-		return nil, globalMemoryLockFactoryErr
+	if err != nil {
+		return nil, err
 	}
-	return GlobalMemoryLockFactory.CreateLock(lockId)
+	return init.CreateLock(lockId)
 }
