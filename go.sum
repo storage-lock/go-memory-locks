@@ -47,6 +47,8 @@ github.com/storage-lock/go-storage-lock-factory v0.0.1 h1:63QBqbhMtOJExze1K6sBA7
 github.com/storage-lock/go-storage-lock-factory v0.0.1/go.mod h1:gTezLo4pkNBBIOLohmQVvrMW6+3c3zzVsb8V6rd2k8o=
 github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230807141610-c3fc136045e8 h1:v/pwM5TaVTfW8Z3XXZwGqvV830+IULcEW28504hx87Y=
 github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230807141610-c3fc136045e8/go.mod h1:Xfpc04ZQAf/be/TlzCNHQV86mO9KQ9gag9t2NHDfT6c=
+github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230830164658-ef9d99aed23d h1:XipnAXC1sepFUEkvlAiLgXfgX8FUretMF5Os8uUWMCs=
+github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230830164658-ef9d99aed23d/go.mod h1:vg2/LQ5OxpfLRJrUypj1m6sNwtKhzAgfRf3jDXZgakA=
 github.com/storage-lock/go-utils v0.0.0-20230804131655-6dbe431cdc1a h1:6nSZOPYmogTELlp3ZUmzTbOupdrH7OomezDMKHnSAzA=
 github.com/storage-lock/go-utils v0.0.0-20230804131655-6dbe431cdc1a/go.mod h1:V0M52rFAkNt77MA3odRqwkl1xRkswsEcX/neFbgmhZY=
 github.com/storage-lock/go-utils v0.0.2 h1:pdacTOlD+AHqwWVmDqZLcjKF+7p8TjsmlvZ9bmmkIfE=
