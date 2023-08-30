@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/storage-lock/go-memory-storage v0.0.0-20230815161904-4e2a1ca32314
 	github.com/storage-lock/go-storage-lock v0.0.3
-	github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230807141610-c3fc136045e8
+	github.com/storage-lock/go-storage-lock-factory v0.0.2-0.20230830164658-ef9d99aed23d
 )
 
 require (

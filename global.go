@@ -19,12 +19,12 @@ func NewLock(ctx context.Context, lockId string) (*storage_lock.StorageLock, err
 	return init.CreateLock(lockId)
 }
 
-func NewLockWithOptions(ctx context.Context, lockId string, options *storage_lock.StorageLockOptions) (*storage_lock.StorageLock, error) {
+func NewLockWithOptions(ctx context.Context, options *storage_lock.StorageLockOptions) (*storage_lock.StorageLock, error) {
 	init, err := GetLockFactory(ctx)
 	if err != nil {
 		return nil, err
 	}
-	return init.CreateLockWithOptions(lockId, options)
+	return init.CreateLockWithOptions(options)
 }
 
 func GetLockFactory(ctx context.Context) (*storage_lock_factory.StorageLockFactory[any], error) {
