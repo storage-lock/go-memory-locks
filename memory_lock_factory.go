@@ -1,4 +1,4 @@
-package mariadb_locks
+package memory_locks
 
 import (
 	memory_storage "github.com/storage-lock/go-memory-storage"
