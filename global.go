@@ -24,3 +24,7 @@ func NewLock(ctx context.Context, lockId string) (*storage_lock.StorageLock, err
 	}
 	return init.CreateLock(lockId)
 }
+
+func GetGlobalLockFactory() *storage_lock_factory.StorageLockFactoryBeanFactory[string, any] {
+	return globalLockFactory
+}

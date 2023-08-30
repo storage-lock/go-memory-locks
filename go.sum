@@ -15,6 +15,8 @@ github.com/golang-infrastructure/go-variable-parameter v0.0.3 h1:+roJv+T/krkl5YM
 github.com/golang-infrastructure/go-variable-parameter v0.0.3/go.mod h1:qEnCqgG04+EpGWqRXaNpKhu4JsP6xcT85WpJyS83Dcw=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
 github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/google/uuid v1.3.1 h1:KjJaJ9iWZ3jOFZIf1Lqf4laDRCasjl0BCmnEGxkdLb4=
+github.com/google/uuid v1.3.1/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/storage-lock/go-events v0.0.0-20230805113632-ff4385b14030 h1:ET3kiNlDgAMW/8WKHUGcpb4GzeQSuGnW4xta2Ri/jgY=
@@ -25,6 +27,8 @@ github.com/storage-lock/go-memory-storage v0.0.0-20230804183639-9c892e8a4399 h1:
 github.com/storage-lock/go-memory-storage v0.0.0-20230804183639-9c892e8a4399/go.mod h1:QBYHe6z1n+QO7swRp+XRRMybPJHFwDN+auuJNeVqxKk=
 github.com/storage-lock/go-memory-storage v0.0.0-20230808150856-6044117005c2 h1:McU/ew5j84asBVqJEEbiVOGQ9cJqHq0g099D6BGCSGw=
 github.com/storage-lock/go-memory-storage v0.0.0-20230808150856-6044117005c2/go.mod h1:O/wkRo47jVenLxSk39qL+6OXnW9wX0/9+pg6mmR/K2M=
+github.com/storage-lock/go-memory-storage v0.0.0-20230815161904-4e2a1ca32314 h1:maNzNWWxa4geyFZUmDdhcH5ZqEBMlAD9VoYRhafCszw=
+github.com/storage-lock/go-memory-storage v0.0.0-20230815161904-4e2a1ca32314/go.mod h1:O/wkRo47jVenLxSk39qL+6OXnW9wX0/9+pg6mmR/K2M=
 github.com/storage-lock/go-storage v0.0.0-20230805070648-ce1105955864 h1:0lsu6eydV3zLSPdH4aYrQ3kJ2Tjllac8xzOhIQ5xud0=
 github.com/storage-lock/go-storage v0.0.0-20230805070648-ce1105955864/go.mod h1:zJZ0g3C6YyDLxX0T/+vxTiVVXZ449LNiFLNBs535a6E=
 github.com/storage-lock/go-storage v0.0.2 h1:N5glUlrr1bbJ8ixYsPmOv+TuhIOObX/65+hrNMPWFDc=
